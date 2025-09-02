@@ -26,7 +26,7 @@
  
   <nav  class="fixed top-0 left-0 w-full bg-gray-800 shadow-md z-50">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="text-2xl font-bold">MyPortfolio</div>
+      <div class="text-2xl font-bold">HM</div>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex gap-8 items-center">
@@ -563,25 +563,25 @@ It provides separate interfaces for passengers, drivers, and admins.
 
       <!-- Socials -->
       <div class="space-y-4">
-        <a href="mailto:himanshuyadav9015830677@gmail.com" target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
+        <a target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
           <i data-lucide="mail" class="w-5 h-5"></i>
           <span>himanshuyadav9015830677@gmail.com</span>
         </a>
-        <a href="https://www.linkedin.com/in/himanshu-yadav-96954328b/" target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
+        <a target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
           <i data-lucide="linkedin" class="w-5 h-5"></i>
           <span>https://www.linkedin.com/in/himanshu-yadav-96954328b/</span>
         </a>
-        <a href="https://github.com/Himanshuyadav129" target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
+        <a target="_blank" class="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-teal-500 transition">
           <i data-lucide="github" class="w-5 h-5"></i>
           <span>https://github.com/Himanshuyadav129</span>
-      
         </a>
       </div>
-       <div class="flex gap-4 mt-6 text-2xl">
-            <a href="https://www.linkedin.com/in/himanshu-yadav-96954328b/" target="_blank" class="hover:text-teal-400"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Himanshuyadav129" target="_blank" class="hover:text-teal-400"><i class='bx bxl-github'></i></a>
-            <a href="mailto:himanshuyadav9015830677@gmail.com" target="_blank" class="hover:text-teal-400"><i class='bx bxl-gmail'></i></a>
-          </div>
+
+      <div class="flex gap-4 mt-6 text-2xl">
+        <a href="https://www.linkedin.com/in/himanshu-yadav-96954328b/" target="_blank" class="hover:text-teal-400"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Himanshuyadav129" target="_blank" class="hover:text-teal-400"><i class='bx bxl-github'></i></a>
+        <a href="mailto:himanshuyadav9015830677@gmail.com" target="_blank" class="hover:text-teal-400"><i class='bx bxl-gmail'></i></a>
+      </div>
     </div>
 
     <!-- Right Side: Contact Form -->
@@ -601,7 +601,19 @@ It provides separate interfaces for passengers, drivers, and admins.
       <button type="submit" class="w-full bg-teal-500 text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-teal-600 transition">Send Message</button>
     </form>
   </div>
+
+  <!-- JS Script to clear form after submit -->
+  <script>
+    const contactForm = document.querySelector('form[action="https://formspree.io/f/xrbaqggz"]');
+    contactForm.addEventListener('submit', function(e) {
+      // Delay reset slightly to allow Formspree to process
+      setTimeout(() => {
+        contactForm.reset();
+      }, 100);
+    });
+  </script>
 </section>
+
 
 <!-- Lucide Icons Script -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
