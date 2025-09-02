@@ -1,0 +1,23 @@
+/* style.css — small custom rules (Tailwind used for main layout) */
+
+/* smooth transitions */
+:root { --teal: #14b8a6; }
+html,body { scroll-behavior: smooth; }
+
+/* make images look nice on light/dark */
+img { display: block; }
+
+/* project card lift */
+.project-card { transition: transform .35s ease, box-shadow .35s ease; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(2,6,23,0.6); }
+
+/* mobile nav visible style controlled by JS */
+#mobileNav.show { display:block; }
+
+/* smaller screens: reduce hero font-size a bit */
+@media (max-width:640px){
+  h1 { font-size:1.8rem; }
+}
+html {
+  scroll-behavior: smooth;
+}
